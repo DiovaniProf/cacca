@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caça-Palavras - Coletivos de Animais</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="particulas">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <main class="container">
+
+    <!-- TELA INICIAL -->
+    <section class="tela tela-inicial ativa" id="telaInicial">
+      <div class="caixa-inicial">
+
+        <h1>Caça-Palavras</h1>
+        <h2>Coletivos de Animais</h2>
+
+        <p>
+          Encontre no quadro os substantivos coletivos relacionados aos animais.
+        </p>
+
+        <div class="preview-cartas">
+
+          <div class="preview-carta carta-fechada carta-movimento">
+            <div class="icone-abelha">
+              <span class="asa esquerda"></span>
+              <span class="asa direita"></span>
+              <span class="corpo"></span>
+              <span class="faixa f1"></span>
+              <span class="faixa f2"></span>
+              <span class="cabeca"></span>
+              <span class="antena a1"></span>
+              <span class="antena a2"></span>
+            </div>
+          </div>
+
+          <div class="preview-carta carta-aberta carta-movimento centro">
+            <span>Enxame</span>
+          </div>
+
+          <div class="preview-carta carta-fechada carta-movimento">
+            <div class="icone-abelha">
+              <span class="asa esquerda"></span>
+              <span class="asa direita"></span>
+              <span class="corpo"></span>
+              <span class="faixa f1"></span>
+              <span class="faixa f2"></span>
+              <span class="cabeca"></span>
+              <span class="antena a1"></span>
+              <span class="antena a2"></span>
+            </div>
+          </div>
+
+        </div>
+
+        <button id="iniciar" class="botao-inicial">Começar jogo</button>
+
+      </div>
+    </section>
+
+    <!-- TELA DO JOGO -->
+    <section class="tela tela-jogo" id="telaJogo">
+
+      <section class="intro">
+        <h1>Caça-Palavras</h1>
+        <h2>Coletivos de Animais</h2>
+
+        <p>
+          Procure na grade os coletivos correspondentes aos animais indicados.
+        </p>
+
+        <div class="painel">
+          <div class="info">
+            Encontradas: <span id="encontradas">0</span>/<span id="totalPalavras">0</span>
+          </div>
+
+          <button id="reiniciar">Reiniciar jogo</button>
+          <button id="voltar">Tela inicial</button>
+        </div>
+
+        <div id="mensagem" class="mensagem">
+          Clique na primeira e na última letra da palavra.
+        </div>
+      </section>
+
+      <section class="area-jogo">
+
+        <aside class="lista-palavras">
+          <h3>Coletivos para encontrar</h3>
+          <ul id="listaPalavras"></ul>
+        </aside>
+
+        <section class="area-grade">
+          <div class="grade" id="grade"></div>
+        </section>
+
+      </section>
+
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
